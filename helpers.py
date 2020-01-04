@@ -1,15 +1,13 @@
-import matplotlib as plt
 import matplotlib.pyplot as plt
 from numpy.random import randint
 
-def display_imgs(imgs, labels, class_names, fig_size):
+def display_imgs(imgs, labels, class_names, fig_size=(10,10)):
     """
     Display Random Images
 
     train_imgs: image list numpy array
     train_labels: labels numpy array
     class_names: list
-    num_images: int
     fig_size: (width, height)
     """
     random_index = randint(0, len(imgs), 1)[0]
